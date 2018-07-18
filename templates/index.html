@@ -1,0 +1,907 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="ui left vertical menu sidebar">
+    <div class="item">
+        <div class="ui category search item">
+            <div class="ui transparent icon input">
+                <input id="searchfield-1" class="prompt" type="text" placeholder="Search content">
+                <i id="search-1" class="search link icon"></i>
+            </div>
+            <div class="results"></div>
+        </div>
+    </div>
+    <div class="item">
+        Home
+        <div class="menu">
+            <a class="item aboutme-top">About Me</a>
+            <a class="item skills-top">Skills</a>
+            <a class="item exp-top">Experiences</a>
+            <a class="item hob-top">Hobbies and Interests</a>
+        </div>
+    </div>
+    <a class="item"><i class="quote left icon"></i>Blog</a>
+</div>
+
+
+
+<!-- Page Contents -->
+<div id="page" class="pusher">
+
+    <!-- Text header -->
+    <div class="text-head">
+        <div id="menu-bar">
+            <div class="ui borderless inverted small menu">
+                <div class="header item">
+                    <h1 id="brand"><i class="paper plane outline icon"></i>MtSs </h1>
+                </div>
+                <div class="right menu">
+                    <a class="item aboutme-top">
+                        About Me
+                    </a>
+                    <a class="item skills-top">
+                        Skills
+                    </a>
+                    <a class="item exp-top">
+                        Experiences
+                    </a>
+                    <a class="item hob-top">
+                        Hobbies &amp; Interests
+                    </a>
+                   
+                    <a class="header item btn-mn">
+                        <i class="sidebar icon"></i> Menu
+                    </a>
+                    
+                    
+                    <div class="item">
+                        <div class="ui category mini search item">
+                            <div class="ui icon input">
+                                <input id="searchfield-2" class="prompt" type="text" placeholder="Search content">
+                                <i id="search-2" class="search link icon"></i>
+                            </div>
+                            <div class="results"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ui text">
+            <div class="ui center aligned equal width grid">
+                <div class="row">
+                    <div class="column">
+                        <div class="ui container">
+                            <h1 class="ui header">
+                                Monthon Sangsinsup
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="bkk center aligned column">
+                        <div class="ui container">
+                            <h2><i class="map marker alternate icon"></i>Bangkok, Thailand</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <i id="findme-btn" class="angle double down icon"></i>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Header -->
+    <div class="masthead">
+        <div class="bg">
+            <div class="bg-color"></div>
+        </div>
+    </div>
+    
+
+    <!-- Rail sticky -->
+    <div id="context" class="ui piled segment container">
+        <div class="ui left close rail">
+            <div class="ui sticky bound top" >
+                <div class="ui right aligned container">
+                    <div class="ui vertical segment">
+                        <div class="ui items">
+                            <div class="item">
+                                <div class="content">
+                                    <button class="ui icon button btn-mn">
+                                        <i class="sidebar icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+        <div class="ui right close rail">
+            <div class="ui fixed bottom sticky" >
+                <div class="ui  container">
+                    <div class="ui vertical segment">
+                        <div class="ui items">
+                            <div class="item">
+                                <div class="content">
+                                    <a class="ui mini circular facebook icon button social" href="https://www.facebook.com/MonthonZZ" target="_blank">
+                                        <i class="facebook icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <a class="ui mini circular instagram icon button social" href="https://www.instagram.com/_barenzz/" target="_blank">
+                                        <i class="instagram icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <a class="ui mini circular twitter icon button social" href="https://twitter.com/Monthon993" target="_blank">
+                                        <i class="twitter icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <a class="ui mini circular black icon button social" href="https://github.com/monthonmonthon993" target="_blank">
+                                        <i class="github icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <a class="ui mini circular linkedin icon button social" href="https://www.linkedin.com/in/monthon-s" target="_blank">
+                                        <i class="linkedin icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <a class="ui mini circular green icon button social" href="https://medium.com/@monthon993" target="_blank">
+                                        <i class="medium icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <button id="gotop" class="ui circular icon red button">
+                                        <i class="angle double up icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+
+        <!-- About Me -->
+        <div id="about-me" class="ui container raised segment">
+            <a class="ui red huge ribbon label">About Me</a>
+            <p></p>
+            <div class="ui grid container">
+                <div class="row">
+                
+                        <div class="ui segment bg-color">
+                            <div class="ui stackable equal width grid">
+                                <div class="stretched center aligned row">
+                                    <div class="five wide column">
+                                        <div class="ui shape">
+                                            <div class="sides">
+                                                <div class="active side">
+                                                    <div class="ui link raised fluid card">
+                                                        <a class="image slide-s">
+                                                            <img src="{% static 'img/barenz-pro.jpg' %}">
+                                                        </a>
+                                                        <div class="content slide-s">
+                                                            <a class="header" >Monthon Sangsinsup</a>
+                                                            <div class="meta">
+                                                                <a>Software Developer</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="side">
+                                                    <div class="ui raised fluid card">
+                                                        <div class="content">
+                                                            <a class="header slide-s" >Monthon Sangsinsup</a>
+                                                            <div class="meta">
+                                                                <p>Software Developer</p>
+                                                            </div>
+                                                            <div class="desciption">
+                                                                <p>Bangkok, Thailand</p>
+                                                                <p><i class="phone icon"></i>082-8406233</p>
+                                                                <p><i class="red envelope icon"></i>email: monthon993@gmail.com</p>
+                                                                <p>
+                                                                    <a href="https://www.facebook.com/MonthonZZ" target="_blank"><i class="facebook icon"></i></a>
+                                                                    <a href="https://twitter.com/Monthon993" target="_blank"><i class="blue twitter icon"></i></a>
+                                                                    <a href="https://www.instagram.com/_barenzz/" target="_blank"><i class="pink instagram icon"></i></a>
+                                                                    <a href="https://github.com/monthonmonthon993" target="_blank"><i class=" black github icon"></i></a>
+                                                                    <a href="https://www.linkedin.com/in/monthon-s" target="_blank"><i class=" blue linkedin icon"></i></a>
+                                                                </p>
+                                                               
+                                                            </div>
+                                                        </div>
+                                                        <div class="ui bottom attached button slide-s">
+                                                            flip<i class="small arrow right icon"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="ui inverted segment des-text">
+                                            <h5>Hello, Please call me "Benz". </h5>
+                                            <p>
+                                                I stay in Bangkok, Thailand. I'm graduated from King Mongkut's Institute of Technology Ladkrabang 
+                                                for Bachelor's degree with <strong><em>second class honors.</em></strong>
+                                            </p>
+                                            <p>
+                                                After I got an opportunity to intern as a junior software engineer at
+                                                Pronto Tools, I have gotten the good experiences like serveral new
+                                                learnings, how to communicate with my co-workers as well as applied my
+                                                knowledge to using real. moreover, I have participated in a company's 
+                                                project which using Python programming language with Django
+                                                Framework, Docker, Unit testing, and more bit. I still have improved to
+                                                develop my skills to be better. Now, I ready to be a software developer.
+                                            </p>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+
+                <!-- personality -->
+                <div class="row">
+                    
+                        <div class="sixteen wide column">
+                            <h3 class="ui header">
+                                <i class="user icon"></i>
+                                <div class="content">
+                                    PERSONALITY
+                                </div>
+                            </h3>
+                        </div>
+                    
+                </div>
+                <div class="centered row">                    
+                    <div class="ui stackable centered container grid">
+                        <div class="four wide column">
+                            <h5 class="ui center aligned icon header">
+                                <img class="ui big image" src="{% static 'img/icon/icon2.png' %}">
+                                <p>friendly</p>
+                            </h5>
+                        </div>
+                        <div class="four wide column">
+                            <h5 class="ui center aligned icon header">
+                                <img class="ui big image" src="{% static 'img/icon/icon3.png' %}">
+                                <p>optimistic</p>
+                            </h5>
+                        </div>
+                        <div class="four wide column">
+                            <h5 class="ui center aligned icon header">
+                                <img class="ui big image" src="{% static 'img/icon/icon1.png' %}">
+                                <p>energetic</p>
+                            </h5>
+                        </div>
+                        <div class="four wide column">
+                            <h5 class="ui center aligned icon header">
+                                <img class="ui big image" src="{% static 'img/icon/icon4.png' %}">
+                                <p>hard working</p>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="ui container center aligned secondary segment">        
+                        <h5><i class="check green icon"></i> Love to solve problems.</h5>
+                        <h5><i class="check green icon"></i> Having highly adaptive, excellecnt interpersonal.</h5>
+                        <h5><i class="check green icon"></i> Open mind and continual improvement.</h5> 
+                    </div>
+                </div>
+                <p></p>
+
+                <!-- objective -->
+                <div class="row">
+                    <div class="sixteen wide column">
+                        <h3 class="ui header">
+                            <i class="binoculars icon"></i>
+                            <div class="content">
+                                OBJECTIVE
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="ui container center aligned secondary segment">
+                        <p><strong>I am looking for new things to improve my skills</strong></p>
+                        <p><strong>which bring me to be an efficiently software developer.</strong></p>  
+                    </div>
+                    <div class="ui right aligned container">
+                        
+                        <p><strong><i class="quote left icon"></i> Sometimes it is the people no one imagine anything of</strong></p>
+                        <p><strong>who do the things that no one can imagine <i class="quote right icon"></i></strong></p>
+                        <p><em>from The Imitation Game movie.</em></p>
+                    </div>
+                    
+                </div>
+
+                <!-- education -->
+                <div class="row">
+                    <div class="sixteen wide column">
+                        <h3 class="ui header">
+                            <i class="graduation cap icon"></i>
+                            <div class="content">
+                                EDUCATION
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="ui container secondary segment">
+                        <div class="ui items">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="{% static '/img/university.png' %}">
+                                </div>
+                                <div class="middle aligned content">
+                                    <a class="header"><i class="calendar alternate outline icon"></i>2014 - 2017</a>
+                                    <div class="meta">
+                                        <span>Bachelor's Degree,</span>
+                                    </div>
+                                    <div class="description">
+                                        
+                                        <p>King Mongkut's Institute of Technology Ladkrabang</p>
+                                        <p><strong>Major:</strong> Information Engineering <strong>GPA:</strong> 3.32</p>
+                                        <p><i class="yellow star icon"></i>Second Class Honors <i class="yellow star icon"></i></p>
+                                    </div>
+                                    <div class="extra">
+                                        <div class="ui accordion field">
+                                            <div class="title">
+                                                <i class="icon dropdown"></i>
+                                                <strong>Transcript</strong> 
+                                            </div>
+                                            <div class="content field">
+                                                <img src="{% static 'img/transcript-1.jpg' %}"  width="100%"/>
+                                            </div>
+                                        </div>
+                                        <div class="ui accordion field">
+                                            <div class="title">
+                                                <i class="icon dropdown"></i>
+                                                <strong>Degree Qualification</strong>
+                                            </div>
+                                            <div class="content field">
+                                                <img src="{% static 'img/qualification-degree.jpg' %}"  width="100%" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="{% static '/img/high-school.png' %}">
+                                </div>
+                                <div class="middle aligned content">
+                                    <a class="header"><i class="calendar alternate outline icon"></i>2011 - 2013</a>
+                                    <div class="meta">
+                                        <span>High School,</span>
+                                    </div>
+                                    <div class="description">
+                                        <p>Suwannaramwittayakom School</p>
+                                        <p><strong>Major:</strong> Math - Sci student</p>
+                                    </div>
+                                    <div class="extra">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- language -->
+                <div class="row">
+                    <div class="sixteen wide column">
+                        <h3 class="ui header">
+                            <i class="language icon"></i>
+                            <div class="content">
+                                LANGUAGE
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="ui container center aligned segment">
+                        <div class="ui stackable two column centered grid">
+                            <div class="center aligned column">
+                                <img class="ui centered rounded image" src="{% static '/img/th.png' %}" alt="thatland flag" height="100px" width="175px">
+                                <p><strong>Thai ( <em>native</em> )</strong></p>  
+                            </div>
+                            <div class="center aligned column">
+                                <img class="ui centered rounded image" src="{% static '/img/gb.png' %}" alt="british flag" height="100px" width="175px">
+                                <p><strong>English ( <em>good</em> )</strong></p>
+                            </div>
+                        </div>
+                        <p></p>
+                        <!-- <div class="ui secondary segment container center aligned">
+                            <div class="ui fluid accordion">
+                                <div class="title">
+                                    <i class="dropdown icon"></i>
+                                    <strong>TOEIC</strong>
+                                </div>
+                                <div class="content">
+                                    <p class="transition hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi ipsum eius voluptatem non. Cum deleniti, placeat minima atque qui quis sunt tempora accusantium odio optio in incidunt eum at officiis?.</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <!-- Skills -->
+        <div id="skills" class="ui container raised segment">
+            <a class="ui blue huge ribbon label">Skills</a>
+            <div class="ui raised segment">
+
+                <!-- Programming -->
+                <div class="row">
+                    <div class="ui equal width grid">
+                        <div class="column">
+                            <div class="ui container center aligned">
+                                <h2>PROGRAMMING</h2>
+                                <p><i class="angle double right icon"></i><em>click logo to see details.</em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="ui stackable two column centered grid">
+                        <div class="center aligned column">
+                            <div class="ui styled fluid accordion">
+                                <div class="title">        
+                                    <img class="ui centered image" src="{% static '/img/logo-python.png' %}" alt="python logo" >
+                                </div>
+                                <div class="content">
+                                    <div class="ui list">
+                                        <div class="item">Python basic (List, Dict, Tuple, Function, etc.)</div>
+                                        <div class="item">Object Oriented Programming</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="center aligned column">
+                            <div class="ui styled fluid accordion">
+                                <div class="title">        
+                                    <img class="ui centered image" src="{% static '/img/logo-django.png' %}" alt="django logo" style="padding:19.5px 19.5px 19.5px 19.5px;">
+                                </div>
+                                <div class="content">
+                                    <div class="ui list">
+                                        <div class="item">Django Web Framework basic</div>
+                                        <div class="item">Models-Templates-Views concept</div>
+                                        <div class="item">Model Forms</div>
+                                        <div class="item">Django Admin</div>
+                                        <div class="item">Django Deployment</div>
+                                        <div class="item">Class-based views</div>
+                                        <div class="item">CRUD views</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui  secondary  segment center aligned container">
+                        <div class="ui fluid accordion">
+                            <div class="title">
+                                <i class="dropdown icon"></i>
+                                <i class="trophy icon"></i>
+                                <strong>Certificate of Python and Django Full Stack Web Developer Bootcamp</strong>
+                                
+                            </div>
+                            <div class="content">
+                                <a href="https://www.udemy.com/certificate/UC-Y8TLQYLG/" target="_blank" class="ui image">
+                                    <img src="{% static '/img/certificate-python-django.jpg' %}" alt="certificate" width="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui stackable three column centered grid">
+                        <div class="center aligned column">
+                            <div class="ui styled fluid accordion">
+                                <div class="title">
+                                    <img src="{% static '/img/logo-html.png' %}" alt="html logo">
+                                </div>
+                                <div class="content">
+                                    <div class="ui list">
+                                        <div class="item">HTML basic</div>
+                                        <div class="item">HTML Responsive desige</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="center aligned column">
+                            <div class="ui styled fluid accordion">
+                                <div class="title">        
+                                    <img src="{% static '/img/logo-css3.png' %}" alt="css3 logo">
+                                </div>
+                                <div class="content">
+                                    <div class="ui list">
+                                        <div class="item">CSS basic</div>
+                                        <div class="item"><strong>Semantic UI</strong></div>
+                                        <div class="item"><strong>Bootstrap</strong></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="center aligned column">
+                            <div class="ui styled fluid accordion">
+                                <div class="title">
+                                    <img src="{% static '/img/logo-javascript.png' %}" alt="javascript logo">
+                                </div>
+                                <div class="content">
+                                    <div class="content">
+                                        <div class="ui list">
+                                            <div class="item">Javascript basic</div>
+                                            <div class="item">Document Object Model</div>
+                                            <div class="item">jQuery</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="ui horizontal divider">
+                        Other Programming Skills
+                    </h4>
+                    <div class="ui stackable four column centered grid">
+                        <div class="center aligned column">
+                            <img src="{% static '/img/logo-docker.png' %}" alt="docker logo" width="100px">
+                        </div>
+                        <div class="center aligned column">
+                            <img src="{% static '/img/logo-android.png' %}" alt="android logo" width="125px">
+                        </div>
+                        <div class="center aligned column">
+                            <img src="{% static '/img/logo-java.png' %}" alt="java logo" width="45px">
+                        </div>
+                        <div class="center aligned column">
+                            <img src="{% static '/img/logo-php.png' %}" alt="php logo" width="100px">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="ui stackable two column centered grid">
+                        <div class="center aligned column">
+                            <p><strong>Version Control:  GIT</strong></p>
+                        </div>
+                        <div class="center aligned column">
+                            <p><strong>Unit Testing: Pytest</strong></p>
+                        </div>
+                        <div class="center aligned column">
+                            <p><strong>Model-View-Controller concept</strong></p>
+                        </div>
+                        <div class="center aligned column">
+                            <p><strong>Object Oriented Programming concept</strong></p>
+                        </div>
+                        <div class="center aligned column">
+                            <p><strong>Relational Database: SQL, NoSQL</strong></p>
+                        </div>
+                        <div class="center aligned column">
+                            <p><strong>SCRUM and Agile development methodology</strong></p>
+                        </div>
+                        <div class="center aligned column">
+                            <p><strong>Command Line: Linux, Mac (Terminal, iTerm) and Command Prompt </strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui raised segment">
+                <!-- Grapic software -->
+                <div class="row">
+                    <div class="ui equal width grid">
+                        <div class="column">
+                            <div class="ui container center aligned">
+                                <h2>GRAPHIC DESIGE SOFTWARE</h2>
+                                <em>I love Photography!</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="ui stackable two column centered grid">
+                        <div class="center aligned column">
+                            <img src="{% static '/img/logo-photoshop.png' %}" alt="logo ps" width="100px">
+                            <p><strong>Photoshop</strong></p>
+                        </div>
+                        <div class="center aligned column">
+                            <img src="{% static '/img/logo-lightroom.png' %}" alt="logo lr" width="100px">
+                            <p><strong>Lightroom</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui raised segment">
+                <!-- Other skills -->
+                <div class="row">
+                    <div class="ui equal width grid">
+                        <div class="column">
+                            <div class="ui container center aligned">
+                                <h2>OTHER TALENT</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui stackable grid">
+                    <div class="stretched row">
+                        <div class="ten wide column">
+                            <img class="ui bordered rounded image" src="{% static '/img/barenz-with-camera.jpg' %}" alt="barenz camera" width="100%">
+                        </div>
+                        <div class="six wide center aligned column">
+                            <div class="ui segment">
+                                <h3><i class="camera retro icon"></i>Photography</h3>
+                                <p>
+                                    <em>
+                                        I can't go back to the past. But,<br> 
+                                        I can feel the past with the picture. 
+                                    </em>
+                                </p>
+                                <p>
+                                    One of the pictures can makes me thinking about
+                                    somewhere I went or someone I met.
+                                </p>
+                                <p>That feel will not occur if without those pictures.</p>
+                                <p><strong><em>"We keep this love in a photograph." <br>- Ed Sheeran -</em></strong></p>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="ui stackable computer reversed grid">
+                    <div class="stretched row">
+                        <div class="ten wide column">
+                            <img class="ui bordered rounded image" src="{% static '/img/barenz-with-guitar.jpg' %}" alt="barenz camera" width="100%">
+                        </div>
+                        <div class="six wide center aligned column">
+                            <div class="ui segment">         
+                                <h3><i class="music icon"></i>Playing Guitar</h3>
+                                <p><em>Leave your bad things, <br>Leave your bad feeling, <br>And Let's play Guitar.</em></p>
+                                <p>After I have hard working, I relax myself by playing Guitar.</p>  
+                                <p>I love to shout and play guitar simultaneously. It's like I liberate myself and haven't to think about the world anymore.</p>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experiences -->
+        <div id="experiences" class="ui container raised segment">
+            <a class="ui orange huge ribbon label">Experiences</a>
+            <div class="ui segment container center aligned">
+                <h2 class="header"><i class="calendar alternate outline icon"></i> Jun. 2017 - Dec. 2017</h2>
+                <p><strong>Software Developer Junior Intern at Pronto Tools</strong></p>
+                <p><em>backend developer</em></p>
+                <img class="ui rounded image" src="{% static 'img/experience-intern.jpg' %}" alt="intern" width="100%">
+                <a href="https://medium.com/@monthon993/%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%94%E0%B8%B5-%E0%B8%9D%E0%B8%B6%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88-pronto-tools-282d2dfd0c14">
+                    <button class="ui green fluid button">
+                        <p><strong>I write my great experience at Pronto Tools in my Medium (Thai version), </strong> </p>
+                        <p><i class="angle double right icon"></i>Click to visite! <i class="angle double left icon"></i></p>
+                    </button>
+                </a>
+                <!-- <div class="ui padded grid">
+                    <div class="column">
+                        <div class="ui text container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In labore cum deserunt distinctio consequuntur blanditiis similique incidunt fugiat, corporis dolor dolores ratione nesciunt impedit reiciendis ducimus quam possimus itaque odio?</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="ui segment container center aligned">
+                <h2 class="header"><i class="calendar alternate outline icon"></i> Aug. 2016 - Mar. 2017</h2>
+                <p><strong>National Software Contest 19: NSC 2017</strong></p>
+                <p><em>android application</em></p>
+                <img class="ui rounded image" src="{% static 'img/experience-nsc.jpg' %}" alt="nsc" width="100%">
+                <!-- <div class="ui padded grid">
+                    <div class="column">
+                        <div class="ui text container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In labore cum deserunt distinctio consequuntur blanditiis similique incidunt fugiat, corporis dolor dolores ratione nesciunt impedit reiciendis ducimus quam possimus itaque odio?</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="ui segment container center aligned">
+                <h2 class="header"><i class="calendar alternate outline icon"></i> Sep. 2016</h2>
+                <p><strong>KMITL Innovative Award 2016 Digtal Life</strong></p>
+                <p><em>android application</em></p>
+                <img class="ui rounded image" src="{% static 'img/experience-kmitl-inno.jpg' %}" alt="innovative" width="100%">
+                <!-- <div class="ui padded grid">
+                    <div class="column">
+                        <div class="ui text container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In labore cum deserunt distinctio consequuntur blanditiis similique incidunt fugiat, corporis dolor dolores ratione nesciunt impedit reiciendis ducimus quam possimus itaque odio?</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        
+        <!-- Hobbies -->
+        <div id="hobbies" class="ui container raised segment">
+            <a class="ui teal huge ribbon label">Hobbies and Interests</a>
+            <p></p>
+            
+            <div class="ui stackable equal width celled grid">
+                <div class="row">
+                    <div class="column">
+                        <h3 class="ui header">
+                            <img class="ui image" src="{% static 'img/icon/interest-movie.png' %}">
+                            <div class="content">
+                                Movies
+                            </div>
+                        </h3>
+                        <p><em>Much attitude, inspiration, or creative are come from many movies. So I extremely love them.</em> </p>
+                        <div class="ui accordion">
+                            <div class="title">
+                                <i class="dropdown icon"></i>
+                                My first top 10 favorite movies.
+                            </div>
+                            <div class="content">
+                                <div class="ui ordered list">
+                                    <div class="item">Inception (2010)</div>
+                                    <div class="item">The Matrix (1999)</div>
+                                    <div class="item">The Usual Suspects (1995)</div>
+                                    <div class="item">The Shawshank Redemption (1994)</div>
+                                    <div class="item">Fight Club (1999)</div>
+                                    <div class="item">Interstellar (2014)</div>
+                                    <div class="item">Memento (2000)</div>
+                                    <div class="item">It's a Wonderful Life (1946)</div>
+                                    <div class="item">Eternal Sunshine of the Spotless Mind (2004)</div>
+                                    <div class="item"> Into the Wild (2007)</div>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="ui accordion">
+                            <div class="title">
+                                <i class="dropdown icon"></i>
+                                My top 10 favorite directors.
+                            </div>
+                            <div class="content">
+                                <div class="ui ordered list">
+                                    <div class="item">Christopher Nolan</div>
+                                    <div class="item">David Fincher</div>
+                                    <div class="item">Quentin Tarantino</div>
+                                    <div class="item">Denis Villeneuve</div>
+                                    <div class="item">M. Night Shyamalan</div>
+                                    <div class="item">Steven Spielberg</div>
+                                    <div class="item">Martin Scorsese</div>
+                                    <div class="item">J.J. Abrams</div>
+                                    <div class="item">Ridley Scott</div>
+                                    <div class="item">James Cameron</div>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="ui accordion">
+                            <div class="title">
+                                <i class="dropdown icon"></i>
+                                My top 10 favorite genres.
+                            </div>
+                            <div class="content">
+                                <div class="ui ordered list">
+                                    <div class="item">Sci-fi</div>
+                                    <div class="item">Mystery</div>
+                                    <div class="item">Thriller</div>
+                                    <div class="item">Fantasy</div>
+                                    <div class="item">Drama</div>
+                                    <div class="item">Romance</div>
+                                    <div class="item">War</div>
+                                    <div class="item">Crime</div>
+                                    <div class="item">Comedy</div>
+                                    <div class="item">Action</div>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                        <p></p>
+                        <a href="https://www.imdb.com/user/ur59403060/watchlist" target="_blank">
+                            <i class="angle double right icon"></i>See more my list at www.imdb.com
+                        </a>
+                    </div>
+                    <div class="column">
+                        <h3 class="ui header">
+                            <img class="ui image" src="{% static 'img/icon/interest-music.png' %}">
+                            <div class="content">
+                                Musics
+                            </div>
+                        </h3>
+                        <p><em>For me, music is everywhere. take a shower, washing dishes, cleaning or working hardly. Sometime many songs make me feel relax, work smoothly and more concentrate.</em></p>
+                        <div class="ui accordion">
+                            <div class="title">
+                                <i class="dropdown icon"></i>
+                                My favorite songs from my Spotify.
+                            </div>
+                            <div class="content">
+                                <iframe src="https://open.spotify.com/embed/user/21ygfapamamy4m2664grtgioy/playlist/2M4fjyMIZy6tINHkEVfanh" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="ui accordion">
+                            <div class="title">
+                                <i class="dropdown icon"></i>
+                                My top 10 favorite genres.
+                            </div>
+                            <div class="content">
+                                <div class="ui ordered list">
+                                    <div class="item">Rock: alternative rock / hard rock / punk rock</div>
+                                    <div class="item">Indie: indie rock / indie pop / shoegazing / synthpop</div>
+                                    <div class="item">Metal: nu metal / heavy metal / metalcore</div>
+                                    <div class="item">New Wave</div>
+                                    <div class="item">Hip-hop</div>
+                                    <div class="item">Pop: easy listening / oldies pop / pop dance</div>
+                                    <div class="item">Country</div>
+                                    <div class="item">R &amp; B</div>
+                                    <div class="item">Disco / Funk</div>
+                                    <div class="item">EDM / House</div>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                        <p></p>
+                        <a href="https://open.spotify.com/user/21ygfapamamy4m2664grtgioy?si=2yuFUiufQEyoEacN6VIoEQ" target="_blank">
+                            <i class="angle double right icon"></i>Visit more playlist from my Spotify account
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="center aligned column">
+                        <img src="{% static 'img/icon/interest-photography.png' %}" class="ui centered mini image" alt="photo">
+                        <p><strong>Photography</strong></p>
+                    </div>
+                    <div class="center aligned column">
+                        <img src="{% static 'img/icon/interest-guitar.png' %}" class="ui centered  mini image" alt="guitar">
+                        <p><strong>Guitar</strong></p>
+                    </div>
+                    <div class="center aligned column">
+                        <img src="{% static 'img/icon/interest-psychology.png' %}" class="ui centered mini image" alt="psychology">
+                        <p><strong>Psychology</strong></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="center aligned column">
+                        <img src="{% static 'img/icon/interest-bicycle.png' %}" class="ui centered mini image" alt="bicycle">
+                        <p><strong>Bicycle</strong></p>
+                    </div>
+                    <div class="center aligned column">
+                        <img src="{% static 'img/icon/interest-book.png' %}" class="ui centered mini image" alt="book">
+                        <p><strong>Book</strong></p>
+                    </div>
+                    <div class="center aligned column">
+                        <img src="{% static 'img/icon/interest-technology.png' %}" class="ui centered mini image" alt="tech">
+                        <p><strong>Technology</strong></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="center aligned column">
+                        <img src="{% static 'img/icon/interest-science.png' %}" class="ui centered mini image" alt="science">
+                        <p><strong>Science</strong></p>
+                    </div>
+                    <div class="center aligned column">
+                        <img src="{% static 'img/icon/interest-ai.png' %}" class="ui centered mini image" alt="ai">
+                        <p><strong>Artficial Intelligence</strong></p>
+                    </div>
+                    <div class="center aligned column">
+                        <img src="{% static 'img/icon/interest-run.png' %}" class="ui centered mini image" alt="running">
+                        <p><strong>Running</strong></p>
+                    </div>
+                    <div class="center aligned column">
+                        <img src="{% static 'img/icon/interest-univesre.png' %}" class="ui centered mini image" alt="universe">
+                        <p><strong>Universe</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

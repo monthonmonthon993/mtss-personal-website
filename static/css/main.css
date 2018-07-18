@@ -1,0 +1,184 @@
+:root{
+    --red            : #db2828;
+    --orange         : #f2711c;
+    --yellow         : #fbbd08;
+    --olive          : #b5cc18;
+    --green          : #21ba45;
+    --teal           : #00b5ad;
+    --blue           : #2185d0;
+    --violet         : #6435c9;
+    --purple         : #a333c8;
+    --pink           : #a333c8;
+    --brown          : #a5673f;
+    --grey           : #767676;
+    --black          : #1b1c1d;
+    --white          : #ffffff;
+}
+
+
+html {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media all and (max-width: 1690px) {
+    html {
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+    } 
+}
+@media all and (max-width: 1280px) {
+    html {
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+    } 
+    .text-head h1.ui.header{font-size: 5em !important;}
+}
+@media all and (max-width: 980px) {
+    html {
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+    } 
+    #menu-bar a.item {display: none;}
+    #menu-bar .item .search.item {display: none;}
+    #menu-bar a.item.header {display: flex !important;}
+
+    #brand{font-size: 1em;}
+    .text-head h1.ui.header{font-size: 4.5em !important;}
+    .text-head div.bkk.column h2{font-size: 1.75em;}
+}
+@media all and (max-width: 736px) {
+    html {
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+    } 
+    .text-head h1.ui.header{font-size: 4em !important;}
+    .text-head div.bkk.column h2{font-size: 1.5em;}
+}
+@media all and (max-width: 480px) { 
+    html {
+        font-size: 12px;
+        font-family: 'Open Sans', sans-serif;
+    } 
+    .text-head div.bkk.column, .text-head div.bkk.column h2{
+        font-size: 1.25em;
+    }
+    #findme-btn{
+        margin-top: 2em !important;
+        font-size: 2em !important;
+    }
+    #skills h2{
+        font-size: 1.3em;
+    }
+    #experiences h2{
+        font-size: 1.3em;
+    }
+    #hobbies .row .column{
+        text-align: center;
+        padding-left:7px !important;
+        padding-right:7px !important;
+    }
+    .ui.right.close.rail {
+        left:80% !important;
+    }
+    .ui.left.close.rail {
+        right:80% !important;
+    }
+    .icon.button.social {
+        display: none;
+    }
+}
+
+#menu-bar a.item.header {display: none;}
+
+#brand{font-family: 'Merienda', cursive;}
+
+.masthead, div.bg, div.bg-color, .text-head{
+    margin-top: 0em;
+    min-height: 700px;
+   
+}
+.masthead div.bg{
+    background-image: url('../img/barenz-cover.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    transition: all .5s;
+    
+}
+.masthead div.bg-color{
+    opacity: 0.6;
+}
+#menu-bar .ui.inverted.menu{
+    background: rgba(0, 0, 0, 0) !important;
+}
+.text-head {
+    position: absolute;
+    z-index: 3;
+}
+.text-head h1.ui.header {
+    font-family: 'Karla', sans-serif !important;
+    margin-top: 2.2em;
+    color: var(--white);
+    font-size: 5em;
+    font-weight: bolder;
+}
+.text-head div.bkk.column h2 {
+    font-family: 'Karla', sans-serif !important;
+    color: var(--yellow);
+}
+.text-head #findme-btn {
+    margin-top: 3em;
+    font-size: 3em;
+    color: var(--white);
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+.text-head #findme-btn:hover {
+    animation: bounce 0.5s;
+    opacity: 1;
+    cursor: pointer;
+}
+.text-head a.header.item {
+    color: var(--black);
+}
+
+.text-head div.ui.inverted.segment{
+    background: transparent;
+}
+
+.ui.segment.bg-color{
+    min-height: 0;
+}
+
+.des-text {
+    font-size: 0.75;
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+
+#gotop {
+    margin-top: 200px;
+}
+#gotop:hover {
+    animation: bounce 0.5s;
+    opacity: 1;
+    cursor: pointer;
+}
