@@ -6,9 +6,11 @@ verify_ssl = true
 dj-database-url = "*"
 django = "*"
 gunicorn = "*"
+django-heroku = "*"
 psycopg2 = "*"
 whitenoise = "*"
 
 
 [requires]
 python_version = "3.6"
+python_full_version = "3.6.5"
