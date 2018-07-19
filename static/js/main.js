@@ -20,7 +20,7 @@ var lazyLoadingImage = () => {
         .visibility({
             type       : 'image',
             transition : 'fade in',
-            duration   : 1000
+            duration   : 500
         })
     ;
     console.log("lazy load..");
@@ -58,10 +58,8 @@ var changePositionBg = () => {
     //Sticky left and right Rail
 var stickyUI = () => {
     $('.ui.sticky')
-        .sticky({
-            context: '#context'
-        }
-    );
+        .sticky({context: '#context'})
+    ;
 }
 
     //Accordion
