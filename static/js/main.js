@@ -1,3 +1,11 @@
+// lazy loading images
+$('#page img')
+  .visibility({
+    type       : 'image',
+    transition : 'fade in',
+    duration   : 1000
+  })
+;
 
 $(window).scroll(function(){
     if ($(window).scrollTop() == 0){
