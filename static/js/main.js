@@ -58,7 +58,7 @@ var changePositionBg = () => {
     //Sticky left and right Rail
 var stickyUI = () => {
     $('.ui.sticky')
-        .sticky({context: '#context'})
+        .sticky({context: '#cover-content'})
     ;
 }
 
