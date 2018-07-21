@@ -19,8 +19,8 @@ var lazyLoadingImage = () => {
     $('#page img')
         .visibility({
             type       : 'image',
-            transition : 'fade in',
-            duration   : 500
+            transition : 'fade up in',
+            duration   : 1000
         })
     ;
     console.log("lazy load..");
