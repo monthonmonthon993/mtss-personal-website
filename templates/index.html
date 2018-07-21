@@ -17,6 +17,7 @@
             <a class="item aboutme-top">About Me</a>
             <a class="item skills-top">Skills</a>
             <a class="item exp-top">Experiences</a>
+            <a class="item projects-top">Projects</a>
             <a class="item hob-top">Hobbies and Interests</a>
         </div>
     </div>
@@ -28,105 +29,109 @@
 <!-- Page Contents -->
 <div id="page" class="pusher">
 
-    <!-- Text header -->
-    <div class="text-head">
-        <div id="menu-bar">
-            <div class="ui borderless inverted small menu">
-                <div class="header item">
-                    <h1 id="brand"><i class="paper plane outline icon"></i>MtSs </h1>
-                </div>
-                <div class="right menu">
-                    <a class="item aboutme-top">
-                        About Me
-                    </a>
-                    <a class="item skills-top">
-                        Skills
-                    </a>
-                    <a class="item exp-top">
-                        Experiences
-                    </a>
-                    <a class="item hob-top">
-                        Hobbies &amp; Interests
-                    </a>
-                   
-                    <a class="header item btn-menu">
-                        <i class="sidebar icon"></i> Menu
-                    </a>
+    <div id="header">
+        <!-- Text header -->
+        <div class="text-head">
+            <div id="menu-bar">
+                <div class="ui borderless inverted small menu">
+                    <div class="header item">
+                        <h1 id="brand"><i class="paper plane outline icon"></i>MtSs </h1>
+                    </div>
+                    <div class="right menu">
+                        <a class="item aboutme-top">
+                            About Me
+                        </a>
+                        <a class="item skills-top">
+                            Skills
+                        </a>
+                        <a class="item exp-top">
+                            Experiences
+                        </a>
+                        <a class="item projects-top">
+                            Projects
+                        </a>
+                        <a class="item hob-top">
+                            Hobbies &amp; Interests
+                        </a>
                     
-                    
-                    <div class="item">
-                        <div class="ui category mini search item">
-                            <div class="ui icon input">
-                                <input id="searchfield-2" class="prompt" type="text" placeholder="Search content">
-                                <i id="search-2" class="search link icon"></i>
+                        <a class="header item btn-menu">
+                            <i class="sidebar icon"></i> Menu
+                        </a>
+                        
+                        
+                        <div class="item">
+                            <div class="ui category mini search item">
+                                <div class="ui icon input">
+                                    <input id="searchfield-2" class="prompt" type="text" placeholder="Search content">
+                                    <i id="search-2" class="search link icon"></i>
+                                </div>
+                                <div class="results"></div>
                             </div>
-                            <div class="results"></div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="ui text">
-            <div class="ui center aligned equal width grid">
-                <div class="row">
-                    <div class="column">
-                        <div class="ui container">
-                            <h1 class="ui header">
-                                Monthon Sangsinsup
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="bkk center aligned column">
-                        <div class="ui container">
-                            <h2><i class="map marker alternate icon"></i>Bangkok, Thailand</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column">
-                        <i id="findme-btn" class="angle double down icon"></i>
                     </div>
                 </div>
             </div>
             
+            <div class="ui text">
+                <div class="ui center aligned equal width grid">
+                    <div class="row">
+                        <div class="column">
+                            <div class="ui container">
+                                <h1 class="ui header">
+                                    Monthon Sangsinsup
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="bkk center aligned column">
+                            <div class="ui container">
+                                <h2><i class="map marker alternate icon"></i>Bangkok, Thailand</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <i id="findme-btn" class="angle double down icon"></i>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
-    </div>
-    <!-- Header -->
-    <div class="masthead">
-        <div class="bg">
-            <div class="bg-color">
+        <!-- Header -->
+        <div class="masthead">
+            <div class="bg">
+                <div class="bg-color">
 
+                </div>
             </div>
         </div>
     </div>
     
-
     <!-- Content -->
-    <div id="context" class="ui piled segment container">
+    <div id="context" class="ui invisible-seg segment container">
         <!-- Rail sticky -->
         <div class="ui left close rail">
-            <div class="ui sticky bound top" >
-                <div class="ui right aligned container">
-                    <div class="ui vertical segment">
-                        <div class="ui items">
-                            <div class="item">
-                                <div class="content">
-                                    <button class="ui icon button btn-menu">
-                                        <i class="sidebar icon"></i>
-                                    </button>
+                <div class="ui sticky" >
+                    <div class="ui right aligned container">
+                        <div class="ui vertical segment">
+                            <div class="ui items">
+                                <div class="item">
+                                    <div class="content">
+                                        <button class="ui icon button btn-menu">
+                                            <i class="sidebar icon"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>      
+                        </div>      
+                    </div>
                 </div>
-            </div>
         </div>
         <div class="ui right close rail">
-            <div class="ui fixed bottom sticky" >
-                <div class="ui  container">
+            <div class="ui sticky" >
+                <div class="ui left aligned container">
                     <div class="ui vertical segment">
                         <div class="ui items">
                             <div class="item">
@@ -184,8 +189,9 @@
             </div>
         </div>
         <div id="cover-content">
+            <p></p>
             <!-- About Me -->
-            <div id="about-me" class="ui container raised segment">
+            <div id="about-me" class="ui raised segment container">
                 <a class="ui red huge ribbon label">About Me</a>
                 <p></p>
                 <div class="ui grid container ">
@@ -312,7 +318,7 @@
                     <p></p>
 
                     <!-- objective -->
-                    <div class="row">
+                    <div class="centered row">
                         <div class="sixteen wide column">
                             <h3 class="ui header">
                                 <i class="binoculars icon"></i>
@@ -335,7 +341,7 @@
                     </div>
 
                     <!-- education -->
-                    <div class="row">
+                    <div class="centered row">
                         <div class="sixteen wide column">
                             <h3 class="ui header">
                                 <i class="graduation cap icon"></i>
@@ -344,7 +350,7 @@
                                 </div>
                             </h3>
                         </div>
-                        <div class="ui container secondary segment">
+                        <div class="ui container left aligned secondary segment">
                             <div class="ui items">
                                 <div class="item">
                                     <div class="image">
@@ -411,7 +417,7 @@
                     </div>
 
                     <!-- language -->
-                    <div class="row">
+                    <div class="centered row">
                         <div class="sixteen wide column">
                             <h3 class="ui header">
                                 <i class="language icon"></i>
@@ -447,13 +453,14 @@
                     </div>
                 </div>
             </div>
-                
+            
             <!-- Skills -->
-            <div id="skills" class="ui container raised segment">
+            <div id="skills" class="ui raised segment container ">
+                <p></p>
                 <a class="ui blue huge ribbon label">Skills</a>
                 <p></p>
                 <div class="">
-                    <div class="ui raised segment">
+                    <div class="ui container">
 
                         <!-- Programming -->
                         <div class="row">
@@ -603,7 +610,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="ui raised segment">
+                    <div class="ui divider"></div>
+                    <div class="ui container">
                         <!-- Grapic software -->
                         <div class="row">
                             <div class="ui equal width grid">
@@ -628,7 +636,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="ui raised segment">
+                    <div class="ui divider"></div>
+                    <div class="ui container">
                         <!-- Other skills -->
                         <div class="row">
                             <div class="ui equal width grid">
@@ -692,11 +701,12 @@
             </div>
 
             <!-- Experiences -->
-            <div id="experiences" class="ui container raised segment">
+            <div id="experiences" class="ui raised segment container">
+                <p></p>
                 <a class="ui orange huge ribbon label">Experiences</a>
-        
+                <p></p>
                 <div class="">
-                    <div class="ui segment container center aligned">
+                    <div class="ui container center aligned">
                         <h2 class="header"><i class="calendar alternate outline icon"></i> Jun. 2017 - Dec. 2017</h2>
                         <p><strong>Software Developer Junior Intern at Pronto Tools</strong></p>
                         <p><em>backend developer</em></p>
@@ -707,45 +717,178 @@
                                 <p><i class="angle double right icon"></i>Click to visite! <i class="angle double left icon"></i></p>
                             </button>
                         </a>
-                        <!-- <div class="ui padded grid">
+                        <div class="ui padded grid">
                             <div class="column">
                                 <div class="ui text container">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In labore cum deserunt distinctio consequuntur blanditiis similique incidunt fugiat, corporis dolor dolores ratione nesciunt impedit reiciendis ducimus quam possimus itaque odio?</p>
+                                    <p><a style="cursor: pointer;" class="go-iphoenix-project">See my project detail!</a></p>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
-                    <div class="ui segment container center aligned">
+                    <div class="ui divider"></div>
+                    <div class="ui container center aligned">
                         <h2 class="header"><i class="calendar alternate outline icon"></i> Aug. 2016 - Mar. 2017</h2>
                         <p><strong>National Software Contest 19: NSC 2017</strong></p>
                         <p><em>android application</em></p>
                         <img class="ui rounded image" src="{% static 'img/img-min/experience-nsc-min.jpg' %}" data-src="{% static 'img/experience-nsc.jpg' %}" alt="nsc" width="100%">
-                        <!-- <div class="ui padded grid">
+                        <div class="ui padded grid">
                             <div class="column">
                                 <div class="ui text container">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In labore cum deserunt distinctio consequuntur blanditiis similique incidunt fugiat, corporis dolor dolores ratione nesciunt impedit reiciendis ducimus quam possimus itaque odio?</p>
+                                    <p><a style="cursor: pointer;" class="go-where-project link">See my project detail!</a></p>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
-                    <div class="ui segment container center aligned">
+                    <div class="ui divider"></div>
+                    <div class="ui container center aligned">
                         <h2 class="header"><i class="calendar alternate outline icon"></i> Sep. 2016</h2>
                         <p><strong>KMITL Innovative Award 2016 Digtal Life</strong></p>
                         <p><em>android application</em></p>
                         <img class="ui rounded image" src="{% static 'img/img-min/experience-kmitl-inno-min.jpg' %}" data-src="{% static 'img/experience-kmitl-inno.jpg' %}" alt="innovative" width="100%">
-                        <!-- <div class="ui padded grid">
+                        <div class="ui padded grid">
                             <div class="column">
                                 <div class="ui text container">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In labore cum deserunt distinctio consequuntur blanditiis similique incidunt fugiat, corporis dolor dolores ratione nesciunt impedit reiciendis ducimus quam possimus itaque odio?</p>
+                                    <p><a style="cursor: pointer;" class="go-where-project">See my project detail!</a></p>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project -->
+            <div id="projects" class="ui raised segment container">
+                <p></p>
+                <a class="ui purple huge ribbon label">Projects</a>
+                <p></p>
+                <div class="ui container center aligned">
+                    <div class="ui vertically divided equal width grid">
+                        <div id="iphoenix-project" class="centered row">
+                            <div class="center aligned column">
+                                <img class="ui small centered image" src="{% static 'img/logo/iPhoenix-Logo.png' %}">
+                                <h2 class="ui center aligned header">
+                                    <div class="content">
+                                        "iPhoenix" - WordPress Automation Management Tool
+                                        <div class="sub header">(This project copyright belongs to Pronto Tools.)</div>
+                                    </div>
+                                </h2>
+                                <div class="ui secondary container padded segment">
+                                    <div class="ui list">
+                                        <div class="item">
+                                            <div class="content">
+                                                <div class="header">Type</div>
+                                                <div class="description">Web Application</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui list">
+                                        <div class="item">
+                                            <div class="content">
+                                                <div class="header">Technology</div>
+                                                <div class="description">Python, Django, Docker, AWS, Unix system, HTML/CSS/JS, WordPress, Selenium</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui list">
+                                        <div class="item">
+                                            <div class="content">
+                                                <div class="header">Short Description</div>
+                                                <div class="description">
+                                                    This iPhoenix Tool use to manage about WordPress such as Plugins, Themes, SSL, etc. It can create
+                                                    a website in a minute by using via a frindly interface and all the functions work automatically.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui list">
+                                        <div class="item">
+                                            <div class="content">
+                                                <div class="header">Github:</div>
+                                                <div class="description">(This is a private project for interal company.)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui list">
+                                        <div class="item">
+                                            <div class="content">
+                                                <div class="header">My duty in this project:</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">Full Stack Development</div>
+                                        <div class="item">Backend: Develop fucntions for connecting to database or other server.</div>
+                                        <div class="item">Frontend: Develop friendly user interfaces for each functions. (using bulma)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="where-project" class="centered row">
+                            <div class="center aligned column">
+                                <img class="ui small centered image" src="{% static 'img/logo/where-logo.png' %}">
+                                <h2 class="ui center aligned header">
+                                    <div class="content">
+                                        "Where" - Indoor Localization Mobile Application
+                                    </div>
+                                </h2>
+                                <div class="ui secondary container center aligned padded segment">
+                                    <div class="ui list">
+                                        <div class="item">
+                                            <div class="content">
+                                                <div class="header">Type</div>
+                                                <div class="description">Android Mobile Application</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui list">
+                                        <div class="item">
+                                            <div class="content">
+                                                <div class="header">Technology</div>
+                                                <div class="description">Android, RESTful API, Java, Php</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui list">
+                                        <div class="item">
+                                            <div class="content">
+                                                <div class="header">Short Description</div>
+                                                <div class="description">
+                                                    Two main function. First, located now you where by using Nfc tag.<br>
+                                                    Second, Know a place what you want by searching such as books in the library.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        <a href="https://github.com/ipoobest/Where">Github: <i class="angle double right icon"></i><i class="github icon"></i><i class="angle double left icon"></i></a>
+                                    </p>
+                                    <div class="ui two column stackable grid">
+                                        <div class="column">
+                                            <img class="ui medium centered image" src="{% static 'img/where-1.jpg' %}">
+                                        </div>
+                                        <div class="column">
+                                            <img class="ui medium centered image" src="{% static 'img/where-2.jpg' %}">
+                                        </div>
+                                    </div>
+                                    <h4 class="ui header">Concept</h4>
+                                    <img class="ui huge centered image" src="{% static 'img/where-working.PNG' %}">
+                                    <div class="ui list">
+                                        <div class="item">
+                                            <div class="content">
+                                                <div class="header">My duty in this project</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">Develop a NFC function</div>
+                                        <div class="item">Develop part of the connection between API and Application</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- Hobbies -->
-            <div id="hobbies" class="ui container raised segment">
+            <div id="hobbies" class="ui raised  segment container">
+                <p></p>
                 <a class="ui teal huge ribbon label">Hobbies and Interests</a>
                 <p></p>
                 
@@ -921,74 +1064,52 @@
                 </div>
             </div>
         </div>
+        
     </div>
-
     <!-- -Footer- -->
-    <div id="footer">
-        <div class="ui center align  container">
-            
-            <div class="ui centered equal width grid">
-                <div class="row">
-                    <div class="column">
-                        <div class="ui centered equal width grid">
-                            <div class="row">
-                                <h3 class="ui center aligned inverted header">Contact</h3>
-                            </div>
-                            <div class="row">
-                                <div class="center aligned column">
-                                    <a class="ui mini circular facebook icon button" href="https://www.facebook.com/MonthonZZ" target="_blank">
-                                        <i class="facebook icon"></i>
-                                    </a>
-                                    <a class="ui mini circular twitter icon button" href="https://twitter.com/Monthon993" target="_blank">
-                                        <i class="twitter icon"></i>
-                                    </a>
-                                    <a class="ui mini circular instagram icon button" href="https://www.instagram.com/_barenzz/" target="_blank">
-                                        <i class="instagram icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="center aligned column">
-                                    <a class="ui mini circular grey icon button" href="https://github.com/monthonmonthon993" target="_blank">
-                                        <i class="github icon"></i>
-                                    </a>
-                                    <a class="ui mini circular linkedin icon button" href="https://www.linkedin.com/in/monthon-s" target="_blank">
-                                        <i class="linkedin icon"></i>
-                                    </a>
-                                    <a class="ui mini circular green icon button" href="https://medium.com/@monthon993" target="_blank">
-                                        <i class="medium icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="center aligned column">
+    <div id="footer" class="ui inverted vertical segment">
+        <div class="ui container">
+            <div class="ui center align container">
+                <div class="ui stackable inverted divided equal height stackable grid">
+                    <div class="six wide column"> 
                         <div class="row">
-                            <h3 class="ui center aligned inverted header">Menu</h3>
-                            <p></p>
-                            <a href="#about-me"><p><strong>About Me</strong></p></a>
-                            <a href="#skills"><p><strong>Skills</strong></p></a>
-                            <a href="#experiences"><p><strong>Experiences</strong></p></a>
-                            <a href="#hobbies"><p><strong>Hobbies &amp; Interests</strong></p></a>
+                            <h5 class="ui inverted header">
+                                Contact
+                            </h5>
+                        </div>    
+                        <div class="ui inverted link list">
+                            <a href="https://www.facebook.com/MonthonZZ" target="_blank" class="item"><i class="facebook icon"></i>facebook </i></a>
+                            <a href="https://twitter.com/Monthon993" target="_blank" class="item"><i class="twitter icon"></i>twitter </i></a>
+                            <a href="https://www.instagram.com/_barenzz/" target="_blank" class="item"><i class="instagram icon"></i>instagram </i></a>
+                            <a href="https://github.com/monthonmonthon993" target="_blank" class="item"><i class="github icon"></i>github </i></a>
+                            <a href="https://www.linkedin.com/in/monthon-s" target="_blank" class="item"><i class="linkedin icon"></i>linkedin </i></a>
+                            <a href="https://medium.com/@monthon993" target="_blank" class="item"><i class="medium icon"></i>medium </i></a>
                         </div>
-                        <div class="row">
-                            <p></p>
-                            <h4><del>BLOG (not yet available!)</del></h4>
-                        </div>
-                    </div>  
                     
-                </div>
-                <div class="ui inverted divider"></div>
-                <div class="two column bottom aligned row">
-                    <div class="column">
+                
+                        <div class="ui inverted list">
+                            <div class="item"><i class="phone square icon"></i>Tel. 082-8406233</div>
+                            <div class="item">E-mail: monthon993@gmail.com</div>
+                        </div>
+                          
+                    </div>
+                    <div class="three wide column">
+                        <h5 class="ui inverted header">Menu</h5>
+                        <div class="ui inverted link list">
+                            <a href="#about-me" class="item">About me</a>
+                            <a href="#skills" class="item">Skills</a>
+                            <a href="#experiences" class="item">Experiences</a>
+                            <a href="#projects" class="item">Projects</a>
+                            <a href="#hobbies" class="item">Hobbies &amp; Interests</a>
+                        </div>
+                    </div>
+                    <div class="seven wide column">
+                        <h5 class="ui inverted header">Created</h5>
+                        <p><i class="copyright outline icon"></i>2018 Created by Monthon Sangsinsup.</p>
                         <p>Bangkok, Thailand <i class="th flag"></i></p>
-                        <p><i class="phone square icon"></i>Tel. 082-8406233</p>
-                        <p>E-mail: monthon993@gmail.com</p>
-                    </div>
-                    <div class="right aligned column">
-                        <p><i class="copyright outline icon"></i> 2018 Created by Monthon Sangsinsup</p>
                     </div>
                 </div>
+                
             </div>
         </div>
         
