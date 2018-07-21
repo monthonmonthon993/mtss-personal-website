@@ -189,12 +189,10 @@ html {
     cursor: pointer;
 }
 
-#footer {
-    background: var(--black);
-    color: var(--white);
-    padding-left: 20%;
-    padding-right: 20%;
-    margin-top:50px;
+#footer.segment {
+    padding: 5em 0em;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #context.invisible-seg.ui.segment{
