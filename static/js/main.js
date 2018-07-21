@@ -206,7 +206,8 @@ var goTo = () => {
     goToFunction(".item.aboutme-top","#about-me");
     goToFunction(".item.skills-top","#skills");
     goToFunction(".item.exp-top","#experiences");
-    goToFunction(".item.projects-top","#hobbies");
+    goToFunction(".item.projects-top","#projects");
+    goToFunction(".item.hob-top","#hobbies");
     goToFunction("#findme-btn","#about-me");
     goToFunction("#gotop","#page");
 
