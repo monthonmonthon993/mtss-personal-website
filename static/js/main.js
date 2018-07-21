@@ -201,39 +201,28 @@ var search = (searchField) => {
 
 // ----- General Js -------
 
+// go to .. using scroll
 var goTo = () => {
-    $(".item.aboutme-top").on("click",function() {
+    goToFunction(".item.aboutme-top","#about-me");
+    goToFunction(".item.skills-top","#skills");
+    goToFunction(".item.exp-top","#experiences");
+    goToFunction(".item.projects-top","#hobbies");
+    goToFunction("#findme-btn","#about-me");
+    goToFunction("#gotop","#page");
+
+    goToFunction(".go-iphoenix-project","#iphoenix-project");
+    goToFunction(".go-where-project","#where-project");
+
+}
+var goToFunction = (current, destination) => {
+    $(current).on("click",function() {
         $('html, body').animate({
-            scrollTop: $("#about-me").offset().top
-        }, 1000);
-    });
-    $(".item.skills-top").on("click",function() {
-        $('html, body').animate({
-            scrollTop: $("#skills").offset().top
-        }, 1000);
-    });
-    $(".item.exp-top").on("click",function() {
-        $('html, body').animate({
-            scrollTop: $("#experiences").offset().top
-        }, 1000);
-    });
-    $(".item.hob-top").on("click",function() {
-        $('html, body').animate({
-            scrollTop: $("#hobbies").offset().top
-        }, 1000);
-    });
-    $("#findme-btn").on("click",function() {
-        $('html, body').animate({
-            scrollTop: $("#about-me").offset().top
-        }, 1000);
-    });
-    $("#gotop").on("click",function() {
-        $('html, body').animate({
-            scrollTop: $("#page").offset().top
+            scrollTop: $(destination).offset().top
         }, 1000);
     });
 }
 
+// click menu
 var menuButtton = () => {
     $(".btn-menu").on("click", () => {
         $('.ui.left.sidebar')
